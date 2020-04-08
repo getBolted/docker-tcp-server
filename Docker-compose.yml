@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  tcp: 
+    build: .
+    command: python3 server.py
+    environment: 
+      - PYTHONUNBUFFERED=1
+    ports: 
+      - 32000:32000
